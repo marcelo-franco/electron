@@ -10,6 +10,8 @@
         <button type="submit">Mostrar dimensões</button>
     </form>
     <script>
+        const electron = require('electron');
+        const { ipcRenderer } = electron;
         document.querySelector('form').addEventListener('submit', (event) => {
             //inibir o comportamento padrão de envio do formulário
             event.preventDefault();
